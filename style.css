@@ -1,0 +1,405 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background: #080808;
+    color: #fff;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(parliamenet.jpeg);
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 25px;
+    position: relative;
+}
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    transition: 0.5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+}
+.header-text{
+   margin-top: 10%;
+    
+}
+.header-text p{
+    margin-top: 20px;
+    margin-left: 34%;
+}
+.header-text h1{
+    font-size: 4rem;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 20px;
+    margin-left: 15%;
+    font-weight: 700;
+}
+.header-text2 h1{
+    font-size: 4rem;
+    margin-top: 20px;
+    margin-left: 25%;
+}
+
+/* about */
+#about{
+    padding: 80px 0;
+}
+.row{
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
+.row p{
+    font-size: 3rem;
+    margin-top: 100px;
+}
+.container h2{
+    font-size: 3rem;
+    margin-left: 40%;
+}
+
+/* evets */
+#evets{
+    padding: 30px 0;
+}
+.events-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.container h3{
+    font-size: 3rem;
+    margin-top: 20px;
+    margin-left: 35%;
+}
+.container p{
+    margin-top: 20px;
+    display: flex;
+    text-align: start;
+    font-size: 2rem;
+}
+.containera{
+    padding: 10px 10%;
+}
+.events-list div{
+    background-color: #262626;
+    padding: 40px;
+    font-size: 30px;
+    font-weight: 300;
+    border-radius: 10px;
+    transition: background 0.5s, transform 0.5s;
+}
+.events-list h2{
+    color: yellow;
+}
+.events-list p{
+    margin-top: 20px;
+}
+.events-list div:hover{
+   background-color: rgb(15, 130, 136);
+   transform: translateY(-10px);
+}
+
+/* out team */
+
+#team{
+    padding: 50px 0;
+}
+.containerC{
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+.containerb{
+    padding: 10px 10%;
+}
+.team-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.team{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.team img{
+    height: 200px;
+    width: 200px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#team2{
+    padding: 50px 0;
+}
+.containerd{
+    margin-left: 40%;
+    font-size: 30px;
+}
+
+.containerd{
+    padding: 10px 10%;
+}
+.team-listb{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 40px;
+}
+.teamb{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+.teamb img{
+    height: 200px;
+    width: 200px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+    margin-left: 50%;
+}
+.teamb h1{
+    margin-left: 50%;
+}
+.teamb p{
+    margin-left: 50%;
+}
+
+.teamc img{
+    height: 200px;
+    width: 200px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+
+/* contact */
+.containerD{
+    padding: 10px 10%;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+    
+}
+.contact-left p{
+    margin-top: 30px;
+}
+.contact-left p I{
+    color: #ff004f;
+    margin-right: 15px;
+    font-size: 25px;
+}
+.social-icons{
+    margin-top: 30px;
+}
+.social-icons a{
+    text-decoration: none;
+    font-size: 40px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icons a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+}
+.btn{
+    height: 50px;
+    width: 100px;
+    font-size: 20px;
+    display: inline-block;
+    background: #ff004f;
+    border-radius: 15px 10px 15px 10px;
+    color: #fff;
+}
+.contact-right form{
+    width: 100%;
+}
+form input, form textarea{
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+form input, form textarea{
+    width: 1005;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: #fff;
+    font-size: 18px;
+    border-radius: 6px;
+}
+.copyright{
+    width: 100%;
+    text-align: center;
+    padding: 25px 0;
+    
+    font-weight: 300;
+    margin-top: 20px;
+}
+/* css for small screen */
+nav .fas{
+    display: none;
+}
+@media only screen and (max-width: 600px){
+    #header{
+        background-image: url(parliamenet.jpeg);
+    }
+    .header-text{
+        font-size: 16px;
+    }
+    .header-text p{
+        
+        margin-right: 50%;
+        text-align: center;
+        font-size: 20px;
+    }
+    .header-text h1{
+        font-size: 30px;
+        margin-left: 25%;
+    }
+    .header-text2{
+        font-size: 16pxpx;
+    }
+    .header-text2 h1{
+        font-size: 30px;
+        margin-left: 25%;
+    }
+
+    nav ul li{
+        display: inline-block;
+        list-style: none;
+        margin: 10px 10px;
+    }
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 20px;
+        position: relative;
+    }
+    nav ul li a::after{
+        content: '';
+        width: 0;
+        height: 3px;
+        background: #ff004f;
+        position: absolute;
+        left: 0;
+        bottom: -6px;
+        transition: 0.5s;
+    }
+    nav ul li a:hover::after{
+        width: 100%;
+    }
+    .container h2{
+        font-size: 3rem;
+        margin-left: 30%;
+    }
+    .container h3{
+        font-size: 3rem;
+        margin-left: 20%;
+    }
+    .teamb img{
+        height: 200px;
+        width: 200px;
+        border-top-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        margin-left: 0.5px
+    }
+    .teamb h1{
+        margin-left: 0.5%;
+    }
+    .teamb p{
+        margin-left: 0.5%;
+    }
+    nav .fas{
+        display: block;
+        font-size: 25px;
+    }
+    nav ul{
+        background: #ff004f;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: right 0.5s;
+    }
+    nav ul li{
+        display: block;
+        margin: 25px;
+
+    }
+    nav ul .fas{
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .containerC{
+        margin-left: 20%;
+        font-size: 30px;
+    }
+    .contact-left, .contact-right{
+        flex-basis: 100%;
+    }
+    .copyright{
+        font-size: 14px;
+    }
+}
+#msg{
+    color: #61b752;
+    margin-top: 10px;
+    display: block;
+}
